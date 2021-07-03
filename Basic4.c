@@ -23,7 +23,7 @@ int getNextRandomValue(void)
 
 const int MAX = 3;
 
-int Basic4main()
+int main()
 {
 
     int var[] = {10, 100, 200};
@@ -40,10 +40,12 @@ int Basic4main()
     }
 
     int var_runoob = 10;
-    int *p; // 定义指针变量，整型的指针只能存储整型变量的指针。
+    int *p; // 定义指针变量，整型的指针只能存储整型变量的地址。
     p = &var_runoob;
 
     printf("var_runoob 变量的地址： %p\n", p);
+
+    printf("var_runoob 变量的地址： %d\n", *p);
 
     int *ptr = NULL; //空指针
 
